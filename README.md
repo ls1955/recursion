@@ -1,4 +1,4 @@
-# Recursion
+# Ruby-Recursion
 
 This repo is part of [TOP's project curriculum](https://www.theodinproject.com/lessons/ruby-recursion) which consists of two methods.
 
