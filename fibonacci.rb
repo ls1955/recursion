@@ -1,4 +1,4 @@
-#frozen_string_literal: false
+# frozen_string_literal: false
 
 def fibs(num)
   return [0] if num.zero?
@@ -6,28 +6,23 @@ def fibs(num)
 
   result = [0, 1]
   (2..num).each do |i|
-    result[i] = result[i-2] + result[i-1]
+    result[i] = result[i - 2] + result[i - 1]
   end
 
   result
 end
 
-# fibs's method test cases
-# 10.times do |i|
-#   p fibs(i)
-# end
-
 def fibs_rec(num)
-  num <= 1 ? num : fibs_rec(num - 2) + fibs_rec(num -1)
+  num <= 1 ? num : fibs_rec(num - 2) + fibs_rec(num - 1)
 end
 
-# hasn't figure out a way to join
+# not able to figure out a way to join
 # fibonnaci sequence in an array
-# in a single method
+# with a single method
 def fibs_rec_arr_joiner(num)
   result = []
-  
-  num.times do |i|
+
+  (0..num).each do |i|
     result[i] = fibs_rec(i)
   end
 
@@ -35,5 +30,6 @@ def fibs_rec_arr_joiner(num)
 end
 
 10.times do |i|
+  p fibs(i)
   p fibs_rec_arr_joiner(i)
 end
